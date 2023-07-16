@@ -11,7 +11,8 @@
 <body>
   <script>
     function getName(){
-      var uName = document.getElementsByName('u_name')[0].value;
+      var uName = document.getElementsByName('u_name')[0];
+      document.getElementsByTagName("h1")[0].innerHTML = uName.value;
     }
   </script>
 </body>

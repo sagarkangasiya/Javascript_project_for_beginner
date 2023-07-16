@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popup</title>
+
+  <style>
+     h1{
+      text-align: center;
+      margin-top:10%;
+      font-size: 50px;
+     }
+     button{
+      margin-left: 45%;
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+      border-style: none;
+      width: 10%;
+      cursor: pointer;
+      height: 50px;
+     }
+  </style>
+</head>
+<h1>Please click this link</h1>
+  <button onclick="test()">Submit</button>
+<body>
+  <script>
+    function test(){
+      setTimeout(function(){
+        alert("Hello");
+      },
+     1500);
+    }
+  </script>
+</body>
+</html>

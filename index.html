@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Table</title>
+</head>
+<body>
+  <h1 id="res">
+
+  </h1>
+  <button onclick="getDate()">Date</button>
+  <button onclick="Month()">Month</button>
+  <button onclick="Year()">Year</button>
+  <button onclick="Day()">Day</button>
+  <button onclick="Hours()">Hours</button>
+  
+</body>
+<script>
+  var date = new Date();
+  function getDate(){
+    document.getElementById('res').innerText = date.getDate();
+  }
+  function Month(){
+    document.getElementById('res').innerText = date.getMonth();
+  }
+  function Year(){
+    document.getElementById('res').innerText = date.getFullYear();
+  }
+  function Day(){
+    document.getElementById('res').innerText = date.getDay();
+  }
+  function Hours(){
+    document.getElementById('res').innerText = date.getHours();
+  }
+
+</script>
+
+</html>
